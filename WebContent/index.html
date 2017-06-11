@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Reportes disponibles</h1>
+	<ul>
+		<li>Alumnos por escuela</li>
+		<li><ul>
+			<li><a href="ReportBinaryPDF">PDF</a></li>
+			<li><a href="ReportBinaryDOC">WORD</a></li>
+			<li><a href="ReportBinaryXLS">EXCEL</a></li>
+		</ul></li>
+		<li>Listado de alumnos</li>
+		<li><ul>
+			<li><a href="ReportBinarioDOC" target="_blank">DOC</a></li>
+			<li><a href="ReportBinarioPDF" target="_blank">PDF</a></li>
+			<li><a href="ReportBinarioXLS" target="_blank">EXCEL</a></li>
+		</ul>
+		<li>Listado de escuelas</li>
+		<ul>	
+			<li><a href="ReporteBinarioDoc">DOC</a></li>
+			<li><a href="ReporteBinarioPDF">PDF</a></li>
+			<li><a href="ReporteBinarioXLS">EXCEL</a></li>
+		</ul>
+	</ul>
+	<form method="get" action="FotoLogica" target="_blank" >
+		Id de alumno: <input type="number" name="idAlumno"/><br/>
+		Tipo de reporte:
+		<select name="tipoReporte">
+			<option value="pdf">PDF</option><!--Igual nombre que en el case -->
+			<option value="doc">DOC</option>
+			<option value="xls">XLS</option>
+		</select>
+		<input type="submit"/>
+	</form>
+</body>
+</html>
